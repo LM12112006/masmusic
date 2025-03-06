@@ -1,0 +1,415 @@
+body{
+    background-color: #ddd;
+    margin: 0;
+    font-family:"Quicksand";
+    position: relative;
+    z-index: 1;
+}
+.head{
+    background-image: url("img/fondo.webp");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    width: 200px;
+}
+
+.tienda{
+    font-size: 30px;
+    background-color: #ddd;
+    color: #444;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    font-family: "Quicksand";
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 70px;
+}
+.tienda:hover{
+    cursor: pointer;
+    color: #ddd;
+    background-color: #444;
+}
+.eslogan{
+    min-height: 10vh;
+    background: linear-gradient(#f80 90%,#ddd);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.eslogan p{
+    margin: 0;
+    font-size: 40px;
+    font-family: "Quicksand";
+    font-weight: bold;
+    text-wrap: balance;
+    text-align: center;
+}
+.contact{
+    display: flex;
+
+    background-color: #ddd;
+    border-radius: 20px;
+}
+.contact ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+.contact ul li{
+    list-style: none;
+    padding: 2px 10px;
+}
+.contact ul li svg{
+    min-width: 15px;
+}
+
+@media screen and (max-width:1000px){
+    .eslogan{
+        flex-direction: column;
+    }
+    .eslogan p{
+        font-size: 15px;
+    }
+    .tienda{
+        font-size: 20px;
+    }
+    .logo{
+        width: 125px;
+    }
+}
+@media (max-width:1000px) and (min-width:700px){
+    .eslogan p{
+        font-size: 25px;
+    }
+    .tienda{
+        font-size: 25px;
+    }
+    .logo{
+        width: 150px;
+    }
+}
+@media (max-width:1300px) and (min-width:1000px) {
+    .eslogan p{
+        font-size: 30px;
+    }
+    .logo{
+        width: 175px;
+    }
+}
+.order{
+    background-color: #ddd;
+    border-radius: 20%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+button{
+    font-size: 1em;
+    margin: 15px;
+    padding: 10px;
+    background-color: #f90;
+    color: #ddd;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #444;
+    color: #ddd;
+}
+a{
+    text-decoration: none;
+    color: #f90;
+    font-weight: bold;
+}
+/*
+Estilos para la inscripcion
+#inscripcion{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+#inscripcion input,label,select{
+    margin-top: 15px;
+}
+.principal,.secundario{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+button{
+    font-size: 1em;
+    margin: 15px;
+    padding: 10px;
+    background-color: #f90;
+    color: #ddd;
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #444;
+    color: #ddd;
+}
+#salida{
+    position: absolute;
+    left: 3%;
+}
+#salida:hover{
+    cursor: pointer;
+}
+input, select{
+    border: none;
+    border-bottom: 2px solid #f90;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: #f90;
+    font-weight: bold;
+}
+*/
+
+/*estilo para el apartado de pedidos oculto*/
+#pedido-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width:50%;
+    height: 100%;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media screen and (max-width:1000px){
+    #pedido-container{
+        width: 100%;
+        font-size: 1em;
+    }
+}
+#pedido {
+    padding: 1rem;
+    overflow-y: auto;
+    max-height: 70%;
+}
+
+#pedido-close {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#pedidos {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+}
+
+#pedidos li {
+    color: #f80;
+    display: flex; /* Usar Flexbox */
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centrar verticalmente */
+    padding: 8px 0; /* Espaciado vertical */
+    border-bottom: 1px solid #ccc; /* Línea divisoria opcional */
+}
+
+/*Style store*/
+#store-title{
+    text-align: center;
+    font-size: 50px;
+    color: #f90;
+    margin: 0;
+    margin-top: 20px;
+}
+.store-description{
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    margin: 20px 0 20px 0;
+    color: #444;
+    font-weight: bold;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    background-color:#f80;
+    box-sizing: border-box;
+    padding: 30px;
+}
+h3{
+    margin: 0;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(#f80,#ddd,#f80);
+    font-size: 40px;
+}
+.box{
+    position: relative;
+    width: 400px;
+    height: auto;
+}
+.box img{
+    max-width: 100%;
+    border-radius: 20%;
+}
+.descripcion{
+    font-size: 1.5em;
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 20%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align:center
+}
+.descripcion:hover{
+    opacity: 1;
+}
+.boton-movil{
+    display: none;
+}
+
+@media screen and (max-width:1000px){
+    .flexbox{
+        flex-direction: column;
+    }
+    .box{
+        width: 200px;
+        height: auto;
+        position: relative;
+    }
+    .descripcion{
+        display: none;
+    }
+    .boton-movil{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+    }
+}
+
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.2em;
+}
+.img{
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+.img img,video{
+    max-width: 100%;
+
+}
+.modal-fondo{
+    background-color: #ddd;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cierre{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;  
+}
+
+#pedidos li{
+    font-weight: bold;
+}
+
+select{
+    border:none;
+    border-bottom: 2px solid #f80;
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+.form fieldset{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+  #form-container {
+    width: 50%;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  }
+  @media screen and (max-width:1000px){
+    #form-container{
+        width: 100%;
+    }
+  }
+  #detalle-pedido {
+      overflow-y:auto; 
+      max-height:80vh; 
+      padding-right :17px
+  }
+  .form input,textarea{
+    border: none;
+    border-bottom: 2px solid #f90;
+    outline: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 50%;
+    margin: auto;
+}
+.form input,label,textarea,fieldset{
+    margin-top: 15px;
+}

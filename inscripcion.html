@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="keywords" content="musica, cursos, aprender, guitarra, trompeta, tocar">
+    <meta autor="Luis Miranda, Diosel Lopez">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <title>Registro-+Music</title>
+</head>
+<body>
+    <a href="index.html"><svg id="salida" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#f90" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z"/>
+        <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
+      </svg></a>
+    <form id="inscripcion">
+        <h1>Formulario de inscripcion</h1>
+        <fieldset class="principal">
+            <legend>Datos principales</legend>
+            <label>Nombre beneficiario</label>
+            <input type="text" name="nombre" placeholder="Miguel Pedraza" required>
+            <label>Identificacion</label>
+            <input type="text" name="id" placeholder="1034057999" required>
+            <label>Nombre acudiente</label>
+            <input type="text" name="nombre-acudiente" placeholder="En caso de ser menor de edad">
+            <label>Identificacion acudiente</label>
+            <input type="text" name="id-acudiente" placeholder="1034057999">
+            <label>Direccion</label>
+            <input type="text" name="direccion" placeholder="Para saber donde vives" required>
+            <label>Telefono</label>
+            <input type="text" name="telefono" placeholder="Para comunicarnos contigo" required>
+            <label>Correo electronico</label>
+            <input type="text" name="mail" placeholder="example@gmail.com" required>
+        </fieldset>
+        <fieldset class="secundario">
+            <legend>Datos secundarios</legend>
+            <label>¿Tienes algun conocimiento musical?</label>
+            <input type="radio" value="si" name="opcion-saberes">Si
+            <input type="radio" value="no" name="opcion-saberes" >No
+            <label>¿Que instrumento deseas aprender?</label>
+            <select name="instrumento">
+                <option value="tecnica vocal">Tecnica vocal</option>
+                <option value="trompeta">Trompeta</option>
+                <option value="guitarra">Guitarra</option>
+                <option value="piano">Piano</option>
+                <option value="bateria">Bateria</option>
+                <option value="bajo">Bajo</option>
+                <option value="trombom">Trombon</option>
+            </select>
+            <label>¿Que nivel musical eres?</label>
+            <select name="nivel-musica">
+                <option value="sin nivel">Sin nivel</option>
+                <option value="nivel 1">nivel 1</option>
+                <option value="nivel 2">nivel 2</option>
+                <option value="nivel 3">nivel 3</option>
+                <option value="nivel 4">nivel 4</option>
+            </select>
+            <label>¿Aceptas nuestra <a href="https://docs.google.com/document/d/136UZdvB3xhgtY14DezCo2xdzdSVpQoml5N3HUf7hBYY/edit?usp=sharing">politica de privacidad</a>?</label>
+        <input type="radio" name="politica" value="si" required>Si
+        <input type="radio" name="politica" value="no" required>No
+        </fieldset>
+        <button onclick="enviar()">Enviar</button>
+    </form>
+</body>
+</html>
