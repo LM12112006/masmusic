@@ -45,19 +45,41 @@
         <h3>Sueteres</h3>
         <div class="flexbox">
             <div class="box">
-                <button class="boton-movil" data-modal="modal-1" onclick="modal()">Ver mas</button>
+                <button class="boton-movil" data-modal="modal-1" onclick="modal()">Ver detalles</button>
                 <img src="img/sueter blanco.jpg" loading="lazy" alt="sueter +music blanco">
-                <div class="descripcion">
-                    <p>Sueter +music color blanco</p>
-                    <button data-modal="modal-1" onclick="modal()">Ver detalles</button>
+                <div class="descripcion" id="modal-1">
+                    <p class="text">Sueter +music blanco</p>
+                    <span class="price">$30000</span>
+                    <form>
+                        <p>Selecciona la talla:</p>
+                        <div>
+                            <select name="opcion">
+                                <option value="Talla S">Talla S</option>
+                                <option value="Talla M">Talla M</option>
+                                <option value="Talla L">Talla L</option>
+                            </select>
+                        </div>
+                    </form>
+                    <button data-modal="modal-1" onclick="añadir()">Añadir al pedido</button>
                 </div>
             </div>
             <div class="box">
-                <button class="boton-movil" data-modal="modal-2" onclick="modal()">Ver mas</button>
+                <button class="boton-movil" data-modal="modal-2" onclick="modal()">Ver detalles</button>
                 <img src="img/sueter negro.jpg" loading="lazy" alt="sueter +music negro">
-                <div class="descripcion">
-                    <p>Sueter +music color negro</p>
-                    <button data-modal="modal-2" onclick="modal()">Ver detalles</button>
+                <div class="descripcion" id="modal-2">
+                    <p class="text">Sueter +music negro</p>
+                    <span class="price">$30000</span>
+                    <form>
+                        <p>Selecciona la talla:</p>
+                        <div>
+                            <select name="opcion">
+                                <option value="Talla S">Talla S</option>
+                                <option value="Talla M">Talla M</option>
+                                <option value="Talla L">Talla L</option>
+                            </select>
+                        </div>
+                    </form>
+                    <button data-modal="modal-2" onclick="añadir()">Añadir al pedido</button>
                 </div>
             </div>
         </div>
@@ -65,22 +87,40 @@
             <div>
             <h3>Cafe</h3>
             <div class="box">
-                <button class="boton-movil" data-modal="modal-3" onclick="modal()">Ver mas</button>
+                <button class="boton-movil" data-modal="modal-3" onclick="modal()">Ver detalles</button>
                 <img src="img/cafe.jpg" loading="lazy" alt="Cafe artesanal">
-                <div class="descripcion">
-                    <p>Cafe puro 100% artesanal</p>
-                    <button data-modal="modal-3" onclick="modal()">Ver detalles</button>
+                <div class="descripcion" id="modal-3">
+                    <p><span class="text">Cafe</span> puro 100% artesanal</p>
+                    <form>
+                        <p>Selecciona el tamaño:</p>
+                        <div>
+                            <select name="opcion">
+                                <option value="250g">250g - <span class="price">$13000</span></option>
+                                <option value="500g">500g - <span class="price">$22000</span></option>
+                            </select>
+                        </div>
+                    </form>
+                    <button data-modal="modal-3" onclick="añadir()">Añadir al pedido</button>
                 </div>
             </div>
         </div>
         <div>
             <h3>Minimochilas</h3>
             <div class="box" style="margin: auto;">
-                <button class="boton-movil" data-modal="modal-4" onclick="modal()">Ver mas</button>
+                <button class="boton-movil" data-modal="modal-4" onclick="modal()">Ver detalles</button>
                 <img src="img/minimochila.jpg" loading="lazy" alt="Cafe artesanal">
-                <div class="descripcion">
-                    <p>Minimochila +Music<br>Tejido Artesanal</p>
-                    <button data-modal="modal-4" onclick="modal()">Ver detalles</button>
+                <div class="descripcion" id="modal-4">
+                    <p class="text">Minimochila +Music</p>
+                    <span class="price">$20000</span>
+                    <form>
+                        <p>Selecciona la talla:</p>
+                        <div>
+                            <select name="opcion">
+                                <option value="Normal">Normal</option>
+                            </select>
+                        </div>
+                    </form>
+                    <button data-modal="modal-4" onclick="añadir()">Añadir al pedido</button>
                 </div>
             </div>
         </div>
