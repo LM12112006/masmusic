@@ -202,7 +202,7 @@ function final(event){
   }
   var total = document.getElementById("total").textContent;
   var mensaje = "Detalle pedido \n" + texto +""+ total; 
-    window.location.href = "mailto:inscripcionesmasmusic25@gmail.com?subject=Pedido%20#%20"+Numpedido+"&body=" + encodeURIComponent(mensaje);
+    window.location.href = "mailto:masmusicshopctg@gmail.com?subject=Pedido%20#%20"+Numpedido+"&body=" + encodeURIComponent(mensaje);
     const alert = document.createElement('div');
     alert.innerHTML = `
     <div class="dialog-content">
