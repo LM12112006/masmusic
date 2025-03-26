@@ -134,8 +134,28 @@ a{
     color: #f90;
     font-weight: bold;
 }
-/*
-Estilos para la inscripcion
+.inscripcion{
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    background-color: #f80;
+    color: #ddd;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.inscripcion:hover{
+    background-color: #444;
+    color: #ddd;
+}
+@media screen and (max-width:500px){
+    .inscripcion{
+        padding: 10px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+}
+/*Estilos para la inscripcion*/
 #inscripcion{
     width: 50%;
     margin: auto;
@@ -184,7 +204,7 @@ a{
     color: #f90;
     font-weight: bold;
 }
-*/
+
 
 /*estilo para el apartado de pedidos oculto*/
 #pedido-container {
