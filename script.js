@@ -1,4 +1,4 @@
-/*
+
 function enviar() {
     var nombre = document.getElementsByName("nombre")[0].value;
     var id = document.getElementsByName("id")[0].value;
@@ -36,7 +36,7 @@ function enviar() {
     cuerpo += "Nivel musical: " + nivel;
     window.location.href = "mailto:inscripcionesmasmusic25@gmail.com?subject=Registro%20nuevo%20beneficiario&body=" + encodeURIComponent(cuerpo);
     }
-*/
+
 
 
 function modal(){
